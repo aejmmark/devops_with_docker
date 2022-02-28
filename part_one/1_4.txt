@@ -1,0 +1,8 @@
+docker run -d -it --name website ubuntu sh -c 'echo "Input website:"; read website; echo "Searching.."; sleep 1; curl http://$website;'
+docker exec -it website bash
+apt update
+apt upgrade
+apt install curl
+exit
+docker attach website
+helsinki.fi
