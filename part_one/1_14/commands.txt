@@ -1,0 +1,4 @@
+docker build 1_12 -t front
+docker build 1_13 -t back
+docker run -d -p 5000:5000 front
+docker run -d -p 8080:8080 back
